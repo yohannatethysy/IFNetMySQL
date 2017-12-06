@@ -1,0 +1,9 @@
+from model.Mensagem import Mensagem
+
+class MensagemDAO():
+
+  def inserirMsg(self, mensagem: Mensagem):
+    pass
+  
+  def listarMsg(self):
+    pass
