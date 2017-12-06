@@ -12,12 +12,12 @@ try:
         cursor = conn.cursor()
 
         # criando as tabelas
-        cursor.execute("CREATE TABLE TB_Usuario(id INTEGER PRIMARY KEY, nome VARCHAR(20), email VARCHAR(30))")
+        cursor.execute("CREATE TABLE TB_Usuario(id INTEGER PRIMARY KEY, nome VARCHAR(20), email VARCHAR(30), senha VARCHAR(15))")
 
         cursor.execute("CREATE TABLE TB_rede_social (nomeRD VARCHAR(20), descricao VARCHAR(150)))")
 
+        conn.commit()
         cursor.close()
-
         conn.close()
 
 except mysql.connector.Error as err:
